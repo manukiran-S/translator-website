@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text to Text Translator</title>
+</head>
+<body>
+    <h1>Text to Text Translator</h1>
+    <form method="post">
+        <label for="text">Text:</label>
+        <input type="text" id="text" name="text">
+        <label for="language">Language:</label>
+        <input type="text" id="language" name="language">
+        <button type="submit">Translate</button>
+    </form>
+    {% if translated_text %}
+        <h2>Translated Text:</h2>
+        <p>{{ translated_text }}</p>
+    {% endif %}
+</body>
+</html>

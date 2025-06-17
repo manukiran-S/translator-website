@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Voice to Text</title>
+</head>
+<body>
+    <h1>Voice to Text</h1>
+    <form method="post">
+        <label for="language">Language:</label>
+        <input type="text" id="language" name="language">
+        <button type="submit">Record and Convert</button>
+    </form>
+    {% if text %}
+        <h2>Original Text:</h2>
+        <p>{{ text }}</p>
+        <h2>Translated Text:</h2>
+        <p>{{ translated_text }}</p>
+    {% endif %}
+</body>
+</html>

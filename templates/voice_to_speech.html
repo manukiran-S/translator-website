@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Voice to Speech</title>
+</head>
+<body>
+    <h1>Voice to Speech</h1>
+    <form method="post">
+        <label for="language">Language:</label>
+        <input type="text" id="language" name="language">
+        <button type="submit">Record and Convert</button>
+    </form>
+    {% if speech %}
+        <audio controls>
+            <source src="{{ speech }}" type="audio/mpeg">
+        </audio>
+    {% endif %}
+</body>
+</html>
