@@ -19,6 +19,14 @@ This is a basic translator website project that integrates multiple input and ou
 - **Voice to Speech**  
   Translate spoken input and output it as speech in another language.
 
+##  Hardware Implementation
+
+This project was successfully tested and run on a **Raspberry Pi 4**.  
+Connected peripherals:
+- **Webcam** – for capturing images (image to text).
+- **Microphone** – for voice input (voice to text / voice to speech).
+- **Speaker** – for audio output (text to speech / voice to speech).
+
 ##  Note
 
 This project is built for educational and demonstration purposes. Contributions and suggestions are always welcome!
